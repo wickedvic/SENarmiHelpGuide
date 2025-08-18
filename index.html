@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -813,6 +815,97 @@ exports.handler = async (event) => {
                     <li><strong>Technical Q&A:</strong> This is your moment to shine. Be prepared to address questions about core integration, security, APIs, and implementation timelines.</li>
                     <li><strong>Next Steps:</strong> Clearly outline the next steps in the sales process and propose a follow-up action.</li>
                 </ol>
+
+
+               <h4>Structuring the Demo Environment</h4>
+<ol>
+    <li><strong>Open Browser & Tabs:</strong>
+        <ul>
+            <li>Open a <em>private/incognito</em> browser window</li>
+            <li>Open tabs for Narmi Command and any of the following relevant to the demo:
+                <ul>
+                    <li>CAO</li>
+                    <li>BAO</li>
+                    <li>Digital Banking</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>FI Branding/Tailoring:</strong>
+        <ul>
+            <li>Go to FI website / Google Images and gather:
+                <ul>
+                    <li>High-quality logo (transparent background if available)</li>
+                    <li>Favicon (use plugin like <a href="https://addons.mozilla.org/en-US/firefox/addon/get-site-favicon/" target="_blank">GetSiteFavicon</a>)</li>
+                    <li>Capture color hex codes with <a href="https://www.colorzilla.com/" target="_blank">Colorzilla</a> (#000000)</li>
+                    <li>Check the <a href="https://drive.google.com/drive/folders/1zXLp1eMpMs376c2JcSbL5LYtx7Ke5c9T?usp=drive_link" target="_blank">Demo Collateral Google Drive</a> for assets</li>
+                </ul>
+            </li>
+            <li>Image editing (if needed):
+                <ul>
+                    <li>Resize SVG to 1200px width → convert to PNG</li>
+                    <li>Remove background (make transparent)</li>
+                    <li>Resize favicon to 64x64</li>
+                    <li>Create 4 debit card images (check FI site for templates)</li>
+                </ul>
+            </li>
+            <li>Digital Banking (DB):
+                <ul>
+                    <li>In <a href="https://www.canva.com/brand/brand-templates" target="_blank">Canva</a>, build 4 branded promotions</li>
+                    <li>Request approval from design team</li>
+                </ul>
+            </li>
+            <li>In Narmi Command:
+                <ul>
+                    <li><strong>Institution Settings:</strong> Load saved config, set names, FI type, logos, favicon</li>
+                    <li><strong>Copy Editor:</strong> Update customer/member terminology</li>
+                    <li><strong>Narmi Admin:</strong> Configure AO eligibility & FI name in questions</li>
+                    <li><strong>DB Promotions:</strong> Setup 4 promos in 2 sets:
+                        <ul>
+                            <li>Set1: Segments 1 & 3 → one banner + one image card</li>
+                            <li>Set2: Segments 2 & 4 → one banner + one image card</li>
+                        </ul>
+                        <li>Ensure promos expire well after demo</li>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Product Features:</strong>
+        <ul>
+            <li>Institution Settings → Institution Features</li>
+            <li>Turn on all features needed for the demo (set both checked + true)</li>
+            <li>Examples:
+                <ul>
+                    <li>AO: Beneficiaries</li>
+                    <li>BDB: Dual approvals</li>
+                    <li>Other required features</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>AO Products:</strong>
+        <ul>
+            <li>Pull product names/descriptions from FI website</li>
+            <li>Update at least 1 checking + 1 savings account</li>
+            <li>Create 1 product bundle</li>
+            <li>For CAO demos: create 4 debit card images (600x378px, FI logo)</li>
+            <li>Upload as custom debit card images</li>
+        </ul>
+    </li>
+
+    <li><strong>DB Account Nicknames:</strong> Match AO product names or popular FI products</li>
+
+    <li><strong>AO Redirect:</strong> Set up redirect from FI website to Narmi AO using 
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/requestcontrol/" target="_blank">Request Control</a>
+    </li>
+
+    <li><strong>Mobile App Re-deploy:</strong> Required for updated colors/branding → Ask Ryan S</li>
+</ol>
+
                 
                 <h3>Handling Technical Objections</h3>
                 <div class="warning-box">
@@ -869,7 +962,7 @@ exports.handler = async (event) => {
                 <ul>
                     <li><strong>Fintech News:</strong> Stay current on industry trends by following publications like American Banker and The Financial Brand.</li>
                     <li><strong>Sales Engineering Community:</strong> Join professional groups on LinkedIn and other platforms to learn from other sales engineers.</li>
-                    <li><strong>CRM & Sales Tools:</strong> Familiarize yourself with our internal CRM (e.g., Salesforce) and sales enablement tools.</li>
+                    <li><strong>CRM & Sales Tools:</strong> Familiarize yourself with our internal CRM (e.g., Hubspot) and sales enablement tools.</li>
                 </ul>
                 
                 <div class="success-box">
@@ -888,3 +981,5 @@ exports.handler = async (event) => {
     </div>
 </body>
 </html>
+
+
